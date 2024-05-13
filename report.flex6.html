@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .top-news {
+            flex: 1 1 100%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .top-news img {
+            max-width: 100%;
+            height: auto;
+        }
+        .top-news h2 {
+            margin-top: 0;
+        }
+        .news-section {
+            flex: 2 1 70%;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        .news-preview {
+            margin-bottom: 20px;
+        }
+        .news-preview img {
+            max-width: 100%;
+            height: auto;
+        }
+        .news-preview h3 {
+            margin-top: 0;
+        }
+        .sidebar {
+            flex: 1 1 30%;
+            padding: 20px;
+            background-color: #ccc;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                order: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-news">
+            <img src="top-news-image.jpg" alt="Top News Image">
+            <h2>Top News Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim lectus et justo sodales, sit amet tempus sapien lacinia.</p>
+            <button>Read More</button>
+        </div>
+        <div class="news-section">
+            <div class="news-preview">
+                <img src="news1.jpg" alt="News 1">
+                <h3>News Title 1</h3>
+                <p>Published on <time datetime="2024-05-13">May 13, 2024</time></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <button>Read More</button>
+            </div>
+            <div class="news-preview">
+                <img src="news2.jpg" alt="News 2">
+                <h3>News Title 2</h3>
+                <p>Published on <time datetime="2024-05-12">May 12, 2024</time></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <button>Read More</button>
+            </div>
+            <div class="news-preview">
+                <img src="news3.jpg" alt="News 3">
+                <h3>News Title 3</h3>
+                <p>Published on <time datetime="2024-05-11">May 11, 2024</time></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <aside class="sidebar">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>
